@@ -1,0 +1,313 @@
+(base)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace
+$ conda activate dev
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace
+$ git clone https://github.com/plefebvre1/module_4_challenge.git
+Cloning into 'module_4_challenge'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (4/4), done.
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace
+$ cd module_4_challenge/
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_4_challenge (main)
+$ ls
+README.md
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_4_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Resources/
+        risk_return_analysis.ipynb
+
+nothing added to commit but untracked files present (use "git add" to track)
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_4_challenge (main)
+$ git add Resources/
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_4_challenge (main)
+$ git add risk_return_analysis.ipynb
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_4_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Resources/whale_navs.csv
+        new file:   risk_return_analysis.ipynb
+
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_4_challenge (main)
+$ git commit -m "Initial starter code given"
+[main 5d4edc0] Initial starter code given
+ 2 files changed, 2298 insertions(+)
+ create mode 100644 Resources/whale_navs.csv
+ create mode 100644 risk_return_analysis.ipynb
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_4_challenge (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_4_challenge (main)
+$ git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 61.72 KiB | 6.17 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/plefebvre1/module_4_challenge.git
+   6297eab..5d4edc0  main -> main
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_4_challenge (main)
+$ jupyter lab
+[I 2022-01-23 12:42:22.416 ServerApp] jupyterlab | extension was successfully linked.
+[W 2022-01-23 12:42:22.436 ServerApp] The 'min_open_files_limit' trait of a ServerApp instance expected an int, not the NoneType None.
+[I 2022-01-23 12:42:22.486 LabApp] JupyterLab extension loaded from C:\Users\peter\anaconda3\envs\dev\envs\dev\lib\site-packages\jupyterlab
+[I 2022-01-23 12:42:22.486 LabApp] JupyterLab application directory is C:\Users\peter\anaconda3\envs\dev\envs\dev\share\jupyter\lab
+[I 2022-01-23 12:42:22.491 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2022-01-23 12:42:22.832 ServerApp] nbclassic | extension was successfully loaded.
+[I 2022-01-23 12:42:22.833 ServerApp] Serving notebooks from local directory: C:\Users\peter\FinTech_Workspace\module_4_challenge
+[I 2022-01-23 12:42:22.833 ServerApp] Jupyter Server 1.4.1 is running at:
+[I 2022-01-23 12:42:22.833 ServerApp] http://localhost:8888/lab?token=e8b21c66355b532dcb7181665c1f67935d8acfff71fadf9e
+[I 2022-01-23 12:42:22.833 ServerApp]  or http://127.0.0.1:8888/lab?token=e8b21c66355b532dcb7181665c1f67935d8acfff71fadf9e
+[I 2022-01-23 12:42:22.834 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2022-01-23 12:42:22.877 ServerApp]
+
+    To access the server, open this file in a browser:
+        file:///C:/Users/peter/AppData/Roaming/jupyter/runtime/jpserver-21188-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/lab?token=e8b21c66355b532dcb7181665c1f67935d8acfff71fadf9e
+     or http://127.0.0.1:8888/lab?token=e8b21c66355b532dcb7181665c1f67935d8acfff71fadf9e
+[I 2022-01-23 12:42:28.097 LabApp] Build is up to date
+[W 2022-01-23 12:42:28.103 ServerApp] 404 GET /api/contents/Class_10_Activities/06-Stu_Financial_Forecasting/Unsolved/financial_forecasting.ipynb?content=0&1642959748097 (::1): No such file or directory: Class_10_Activities/06-Stu_Financial_Forecasting/Unsolved/financial_forecasting.ipynb
+[W 2022-01-23 12:42:28.104 ServerApp] No such file or directory: Class_10_Activities/06-Stu_Financial_Forecasting/Unsolved/financial_forecasting.ipynb
+[W 2022-01-23 12:42:28.105 ServerApp] 404 GET /api/contents/Class_10_Activities/06-Stu_Financial_Forecasting/Unsolved/financial_forecasting.ipynb?content=0&1642959748097 (::1) 6.57ms referer=http://localhost:8888/lab
+[W 2022-01-23 12:42:28.107 ServerApp] 404 GET /api/contents/Class_10_Activities/05-Inst_Simulation_of_Stock_Price_Trajectory/Unsolved/MCForecastTools.py?content=0&1642959748099 (::1): No such file or directory: Class_10_Activities/05-Inst_Simulation_of_Stock_Price_Trajectory/Unsolved/MCForecastTools.py
+[W 2022-01-23 12:42:28.107 ServerApp] No such file or directory: Class_10_Activities/05-Inst_Simulation_of_Stock_Price_Trajectory/Unsolved/MCForecastTools.py
+[W 2022-01-23 12:42:28.108 ServerApp] 404 GET /api/contents/Class_10_Activities/05-Inst_Simulation_of_Stock_Price_Trajectory/Unsolved/MCForecastTools.py?content=0&1642959748099 (::1) 1.96ms referer=http://localhost:8888/lab
+[W 2022-01-23 12:42:28.108 ServerApp] 404 GET /api/contents/Class_10_Activities/06-Stu_Financial_Forecasting/Unsolved/.env?content=0&1642959748098 (::1): No such file or directory: Class_10_Activities/06-Stu_Financial_Forecasting/Unsolved/.env
+[W 2022-01-23 12:42:28.109 ServerApp] No such file or directory: Class_10_Activities/06-Stu_Financial_Forecasting/Unsolved/.env
+[W 2022-01-23 12:42:28.109 ServerApp] 404 GET /api/contents/Class_10_Activities/06-Stu_Financial_Forecasting/Unsolved/.env?content=0&1642959748098 (::1) 2.00ms referer=http://localhost:8888/lab
+[W 2022-01-23 12:42:28.746 ServerApp] 404 GET /api/contents/Class_10_Activities/05-Inst_Simulation_of_Stock_Price_Trajectory/Unsolved?1642959748744 (::1): No such file or directory: Class_10_Activities/05-Inst_Simulation_of_Stock_Price_Trajectory/Unsolved
+[W 2022-01-23 12:42:28.746 ServerApp] No such file or directory: Class_10_Activities/05-Inst_Simulation_of_Stock_Price_Trajectory/Unsolved
+[W 2022-01-23 12:42:28.747 ServerApp] 404 GET /api/contents/Class_10_Activities/05-Inst_Simulation_of_Stock_Price_Trajectory/Unsolved?1642959748744 (::1) 0.97ms referer=http://localhost:8888/lab
+[W 2022-01-23 12:42:30.268 ServerApp] Notebook risk_return_analysis.ipynb is not trusted
+[I 2022-01-23 12:42:30.977 ServerApp] Kernel started: b05fb188-1899-4a72-974e-485da2a36d47
+[I 2022-01-23 12:44:30.733 ServerApp] Saving file at /risk_return_analysis.ipynb
+[I 2022-01-23 12:46:31.454 ServerApp] Saving file at /risk_return_analysis.ipynb
+[I 2022-01-23 12:48:31.507 ServerApp] Saving file at /risk_return_analysis.ipynb
+[I 2022-01-23 12:50:31.560 ServerApp] Saving file at /risk_return_analysis.ipynb
+[I 2022-01-23 12:52:31.623 ServerApp] Saving file at /risk_return_analysis.ipynb
+[I 2022-01-23 12:54:31.698 ServerApp] Saving file at /risk_return_analysis.ipynb
+[I 2022-01-23 12:56:31.778 ServerApp] Saving file at /risk_return_analysis.ipynb
+[I 2022-01-23 12:58:32.445 ServerApp] Saving file at /risk_return_analysis.ipynb
+[I 2022-01-23 13:00:32.512 ServerApp] Saving file at /risk_return_analysis.ipynb
+[I 2022-01-23 13:02:32.573 ServerApp] Saving file at /risk_return_analysis.ipynb
+[I 2022-01-23 13:04:27.261 ServerApp] Saving file at /risk_return_analysis.ipynb
+[I 2022-01-23 13:04:49.305 ServerApp] Kernel shutdown: b05fb188-1899-4a72-974e-485da2a36d47
+[I 2022-01-23 13:04:50.054 ServerApp] Shutting down on /api/shutdown request.
+[I 2022-01-23 13:04:50.056 ServerApp] Shutting down 0 kernels
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_4_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   risk_return_analysis.ipynb
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_4_challenge (main)
+$ git add risk_return_analysis.ipynb
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_4_challenge (main)
+$ git commit -m "Data imported, performance and volatility analyzed"
+[main 0522f72] Data imported, performance and volatility analyzed
+ 1 file changed, 451 insertions(+), 34 deletions(-)
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_4_challenge (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 207.64 KiB | 17.30 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/plefebvre1/module_4_challenge.git
+   5d4edc0..0522f72  main -> main
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_4_challenge (main)
+$ touch 'terminal_history.txt'
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_4_challenge (main)
+$ ls
+README.md  Resources/  risk_return_analysis.ipynb  terminal_history.txt
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_4_challenge (main)
+$ git add terminal_history.txt
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_4_challenge (main)
+$ git commit -m 'Terminal History file initialized'
+[main a1e689b] Terminal History file initialized
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 terminal_history.txt
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_4_challenge (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 305 bytes | 305.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/plefebvre1/module_4_challenge.git
+   0522f72..a1e689b  main -> main
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_4_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   risk_return_analysis.ipynb
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_4_challenge (main)
+$ git add risk_return_analysis.ipynb
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_4_challenge (main)
+$ git commit -m 'Risk analysis completed'
+[main b5dc1c7] Risk analysis completed
+ 1 file changed, 114 insertions(+), 30 deletions(-)
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_4_challenge (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 188.47 KiB | 10.47 MiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/plefebvre1/module_4_challenge.git
+   a1e689b..b5dc1c7  main -> main
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_4_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   risk_return_analysis.ipynb
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_4_challenge (main)
+$ git add risk_return_analysis.ipynb
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_4_challenge (main)
+$ git commit -m 'Risk Return Profile analysis completed'
+[main a62577d] Risk Return Profile analysis completed
+ 1 file changed, 68 insertions(+), 11 deletions(-)
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_4_challenge (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_4_challenge (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 10.63 KiB | 1.33 MiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/plefebvre1/module_4_challenge.git
+   b5dc1c7..a62577d  main -> main
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_4_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   risk_return_analysis.ipynb
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_4_challenge (main)
+$ git commit -m 'Portfolio diversification and final analysis complete'
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   risk_return_analysis.ipynb
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_4_challenge (main)
+$ git add risk_return_analysis.ipynb
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_4_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   risk_return_analysis.ipynb
+
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_4_challenge (main)
+$ git commit -m 'Portfolio diversification and final analysis complete'
+[main 7058350] Portfolio diversification and final analysis complete
+ 1 file changed, 206 insertions(+), 52 deletions(-)
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_4_challenge (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 93.29 KiB | 6.22 MiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/plefebvre1/module_4_challenge.git
+   a62577d..7058350  main -> main
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_4_challenge (main)
+$
